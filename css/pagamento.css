@@ -1,0 +1,157 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:verdana;
+
+}
+:root{
+    --color-background:#EFF3F9;
+    --color-white:#fff;
+    --text-color:#263238;
+    --color-secondary:#0065D4;
+}
+html{
+    font-size:62.5%;
+}
+header{
+    padding:3rem;
+    display:flex;
+}
+
+.header-back{
+    gap:1rem;
+    display:flex;
+    align-items:center;
+}
+.header-back p{
+    font-size:1.6rem;
+    color:var(--color-secondary);
+}
+header .header-img{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+.main{
+    padding: 1rem 3rem;
+}
+.main h1{
+    margin-bottom:3rem;
+    font-size:1.8rem;
+    font-weight:100;
+    color:var(--color-secondary);
+}
+.box{
+    display:flex;
+    padding:2.6rem;
+    align-items:center;
+    justify-content:space-between;
+    background-color:var(--color-background);
+}
+.box.on{
+    background-color:var(--color-white);
+    box-shadow: 0px 0px 20px 0px #d9d9d9;
+}
+.dados{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.dados p{
+    font-size:1.6rem;
+    color:var(--color-secondary);
+}
+.img-troca{
+    cursor:pointer;
+}
+.person-information h4{
+    margin-top:1rem;
+    font-size:1.6rem;
+    font-weight:100;
+    color:var(--color-secondary);
+}
+.person-information p{
+    font-size:1.4rem;
+    margin:1rem 0;
+}
+.person-information form{
+    width:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+form input{
+    width:100%;
+    outline:none;
+    border:none;
+}
+.person-input{
+    padding:1rem;
+    border-radius:.8rem;
+    border: 2px solid var(--color-background);
+}
+.account-title{
+    display:flex;
+    align-items:center;
+    margin-top:1.6rem;
+    gap:2rem;
+}
+.information-account .text{
+    font-size:1.2rem;
+    margin:1rem 4rem;
+}
+.account-title img{
+    width:2rem;
+    height:2rem;
+}
+.account-title h4{
+    margin-top:1rem;
+    font-size:1.6rem;
+    font-weight:100;
+    color:var(--color-secondary);
+}
+.form-pagar form .person-input{
+    margin-bottom:2rem;
+}
+.form-pagar{
+    width:26%;
+}
+.pagamento-type-express, .pagamento-type-other{
+    width:20px;
+    height:20px;
+    border-radius:999999px;
+    border:1px solid var(--color-background);
+    cursor:pointer;
+}
+.active{
+    background:var(--color-secondary);
+}
+.select{
+    display: flex;
+    gap: 38rem;
+}
+.select-center{
+    gap:1rem;
+    margin-bottom:2rem;
+    display:flex;
+    align-items:center;
+}
+.content{
+    padding:2rem;
+    box-shadow: 0px 0px 20px 0px #d9d9d9;
+    opacity:0;
+    visibility:hidden;
+}
+.content.on{
+    opacity:1;
+    visibility:visible;
+}
+.register{
+    border: none;
+    cursor: pointer;
+    color:#fff;
+    padding: 1rem 3rem;
+    border-radius: .6rem;
+    background-color: var(--color-secondary);
+}

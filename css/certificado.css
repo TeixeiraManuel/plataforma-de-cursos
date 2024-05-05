@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:verdana;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body{
+    position:relative;
+}
+:root{
+    --color-background:#EFF3F9;
+    --color-white:#fff;
+    --text-color:#263238;
+    --color-secondary:#0065D4;
+}
+
+nav{
+    margin-left:2rem;
+    margin-right:1rem;
+}
+
+.items{
+    display:flex;
+    justify-content: space-between;
+}
+.lateral-menu{
+    background:var(--color-background);
+    height:100vh;
+    width:20rem;
+}
+.lateral-menu h1{
+    text-align:center;
+    font-size:2rem;
+    color:var(--color-primary);
+    padding: 7rem 0rem 3rem 0rem;
+}
+nav ul li a{
+    font-size:1.4rem;
+    color:var(--color-black);
+    margin:1.8rem 0;
+}
+.center-items{
+    display:flex;
+    gap:2rem;
+    justify-content:center;
+    flex-direction:row;
+    align-items:center;
+}
+.imgHome{
+    display:block;
+    margin:2rem auto;
+
+}
+.main{
+    width:100%;
+    height:100vh;
+}
+
+.main-header{
+    display:flex;
+    align-items:center;
+    justify-content:end;
+    gap:12rem;
+    padding:2rem 2rem;
+    width:100%;
+    border-bottom:2px solid var(--color-background);
+}
+.input-search {
+    padding:1.4rem 4rem;
+    border-radius:1rem;
+    background:var(--color-background)
+}
+.input-search input{
+    width:100%;
+    outline:none;
+    border:none;
+    background:var(--color-background);
+}
+.profile{
+    display:flex;
+    gap:1.8rem;
+    align-items:center;
+}
+.certificados{
+    margin:2rem;
+    overflow-y: scroll;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.certificados img{
+    width:86%;
+}
+.main h2{
+    margin:2rem;
+    color:var(--color-secondary);
+}
+.certificadoContent{
+    cursor:pointer;
+    display:flex;
+    padding:2rem;
+    border:2px solid var(--color-secondary);
+    justify-content:center;
+    align-items:center;
+    border-radius:1rem;
+    position: relative;
+}
+.btn-donwload {
+    position: absolute;
+    bottom: -4rem;
+    border-radius:.9rem;
+    padding: 2rem;
+    width: 90%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color:var(--color-white);
+}
+.certificadoView.on{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+}
+.modal{
+    display:none;
+}
+.modal.on{
+    display:block;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    z-index:11111;
+    position:absolute;
+    background: rgba(0, 0, 0, 0.5);
+}

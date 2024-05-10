@@ -79,7 +79,7 @@ a{
     color:var(--color-secondary);
     text-decoration: none;
 }
-.btn-form a{
+.btn-form button{
     width:100%;
     border:none;
     cursor:pointer;

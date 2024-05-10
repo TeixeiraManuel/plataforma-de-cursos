@@ -63,13 +63,16 @@ html{
     background-color:var(--color-background);
     border: 2px solid var(--color-background);
 }
+a{
+    color: var(--color-white);
+}
 .title{
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 .title img{
-    weight:1rem;
+    font-weight:1rem;
     cursor:pointer;
 }
 .input-log input{

@@ -136,6 +136,7 @@ form input{
     border: none;
     cursor: pointer;
     color:#fff;
+    margin-left: 19rem;
     padding: 1rem 3rem;
     border-radius: .6rem;
     background-color: var(--color-secondary);

@@ -92,8 +92,6 @@ form input{
     border: 2px solid var(--color-background);
 }
 .account-title{
-    display:flex;
-    align-items:center;
     margin-top:1.6rem;
     gap:2rem;
 }
@@ -106,7 +104,7 @@ form input{
     height:2rem;
 }
 .account-title h4{
-    margin-top:1rem;
+    margin:1rem 0;
     font-size:1.6rem;
     font-weight:100;
     color:var(--color-secondary);
@@ -117,20 +115,7 @@ form input{
 .form-pagar{
     width:26%;
 }
-.pagamento-type-express, .pagamento-type-other{
-    width:20px;
-    height:20px;
-    border-radius:999999px;
-    border:1px solid var(--color-background);
-    cursor:pointer;
-}
-.active{
-    background:var(--color-secondary);
-}
-.select{
-    display: flex;
-    gap: 38rem;
-}
+
 .select-center{
     gap:1rem;
     margin-bottom:2rem;
@@ -155,3 +140,55 @@ form input{
     border-radius: .6rem;
     background-color: var(--color-secondary);
 }
+
+.upload{
+    display: flex;
+    margin:4rem 0;
+}
+.custom-file-upload {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    height: 24rem;
+    padding: 10px 20px;
+    border: 2px solid #a5a5a5; /* Altera a cor da borda */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0065D4; /* Altera a cor do texto e do ícone */
+    overflow: hidden;
+  }
+  .file-upload{
+    display:flex;
+    justify-content:center;
+  }
+  .custom-file-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+
+  .custom-file-upload svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease;
+  }
+  

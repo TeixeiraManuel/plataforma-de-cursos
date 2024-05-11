@@ -20,12 +20,3 @@ btn.addEventListener('click',()=>{
    }
 })
 
-type_pagamento_express.addEventListener('click',()=>{
-   type_pagamento_other.classList.remove('active')
-   type_pagamento_express.classList.add('active')
-})
-type_pagamento_other.addEventListener('click',()=>{
-   type_pagamento_express.classList.remove('active')
-   type_pagamento_other.classList.add('active')
-   
-})
